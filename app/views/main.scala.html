@@ -1,0 +1,699 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- Apple devices fullscreen -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!-- Apple devices fullscreen -->
+	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<title>SM Mongolia-@title</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href='@routes.Assets.at("css/bootstrap.min.css")'>
+	<!-- Bootstrap responsive -->
+	<link rel="stylesheet" href='@routes.Assets.at("css/bootstrap-responsive.min.css")'>
+	<!-- jQuery UI -->
+	<link rel="stylesheet" href='@routes.Assets.at("css/plugins/jquery-ui/smoothness/jquery-ui.css")'>
+	<link rel="stylesheet" href='@routes.Assets.at("css/plugins/jquery-ui/smoothness/jquery.ui.theme.css")'>
+	<!-- dataTables -->
+	<link rel="stylesheet" href='@routes.Assets.at("css/plugins/datatable/TableTools.css")'>
+	<!-- chosen -->
+	<link rel="stylesheet" href='@routes.Assets.at("css/plugins/chosen/chosen.css")'>
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href='@routes.Assets.at("css/style.css")'>
+	<!-- Color CSS -->
+	<link rel="stylesheet" href='@routes.Assets.at("css/themes.css")'>
+
+	<!-- jQuery -->
+	<script src='@routes.Assets.at("js/jquery.min.js")'></script>
+	
+	<!-- Nice Scroll -->
+	<script src='@routes.Assets.at("js/plugins/nicescroll/jquery.nicescroll.min.js")'></script>
+	<!-- imagesLoaded -->
+	<script src='@routes.Assets.at("js/plugins/imagesLoaded/jquery.imagesloaded.min.js")'></script>
+	<!-- jQuery UI -->
+	<script src='@routes.Assets.at("js/plugins/jquery-ui/jquery.ui.core.min.js")'></script>
+	<script src='@routes.Assets.at("js/plugins/jquery-ui/jquery.ui.widget.min.js")'></script>
+	<script src='@routes.Assets.at("js/plugins/jquery-ui/jquery.ui.mouse.min.js")'></script>
+	<script src='@routes.Assets.at("js/plugins/jquery-ui/jquery.ui.resizable.min.js")'></script>
+	<script src='@routes.Assets.at("js/plugins/jquery-ui/jquery.ui.sortable.min.js")'></script>
+	<!-- slimScroll -->
+	<script src='@routes.Assets.at("js/plugins/slimscroll/jquery.slimscroll.min.js")'></script>
+	<!-- Bootstrap -->
+	<script src='@routes.Assets.at("js/bootstrap.min.js")'></script>
+	<!-- Bootbox -->
+	<script src='@routes.Assets.at("js/plugins/bootbox/jquery.bootbox.js")'></script>
+	<!-- XEditable -->
+	<script src='@routes.Assets.at("js/plugins/momentjs/jquery.moment.js")'></script>
+	<script src='@routes.Assets.at("js/plugins/mockjax/jquery.mockjax.js")'></script>
+	<script src='@routes.Assets.at("js/plugins/xeditable/bootstrap-editable.min.js")'></script>
+	<script src='@routes.Assets.at("js/plugins/xeditable/demo.js")'></script>
+	<script src='@routes.Assets.at("js/plugins/xeditable/address.js")'></script>
+	<!-- dataTables -->
+	<script src='@routes.Assets.at("js/plugins/datatable/jquery.dataTables.min.js")'></script>
+	<script src='@routes.Assets.at("js/plugins/datatable/TableTools.min.js")'></script>
+	<script src='@routes.Assets.at("js/plugins/datatable/ColReorder.min.js")'></script>
+	<script src='@routes.Assets.at("js/plugins/datatable/ColVis.min.js")'></script>
+	<script src='@routes.Assets.at("js/plugins/datatable/jquery.dataTables.columnFilter.js")'></script>
+	<!-- Chosen -->
+	<script src='@routes.Assets.at("js/plugins/chosen/chosen.jquery.min.js")'></script>
+
+	<!-- Theme framework -->
+	<script src='@routes.Assets.at("js/eakroko.js")'></script>
+	<!-- Theme scripts -->
+
+	<!--[if lte IE 9]>
+		<script src="js/plugins/placeholder/jquery.placeholder.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+	
+	<!-- Favicon -->
+	<!-- Apple devices Homescreen icon -->
+	<link rel="apple-touch-icon-precomposed" href='@routes.Assets.at("img/apple-touch-icon-precomposed.png")' />
+
+</head>
+
+<body>
+	<div id="navigation">
+		<div class="container-fluid">
+			<a href="#" id="brand" style="background-image:none;">-SMMN-</a>
+			</a>
+			<ul class='main-nav'>
+				<li class='active'>
+					<a href="#">
+						<span>Эхлэл</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container-fluid" id="content">
+		<div id="left">
+
+			<div class="subnav">
+				<div class="subnav-title">
+					<a href="#" class='toggle-subnav'><i class="icon-angle-down"></i><span>Тохируулга</span></a>
+				</div>
+				<ul class="subnav-menu">
+					<li class='dropdown'>
+						<a href="#" data-toggle="dropdown">RSS</a>
+					</li>
+                    <li class='dropdown'>
+                        <a href="#" data-toggle="dropdown">Politwoops</a>
+                    </li>
+				</ul>
+                <div class="subnav-title">
+                    <a href="#" class='toggle-subnav'><i class="icon-angle-down"></i><span>Мэдээлэл</span></a>
+                </div>
+                <ul class="subnav-menu">
+                    <li class="active">
+                        <a href="#" >Мэдээ</a>
+                    </li>
+                    <li>
+                        <a href="#">Жиргээ</a>
+                    </li>
+                </ul>
+			</div>
+		</div>
+		<div id="main">
+			<div class="container-fluid">
+                <div class="row-fluid">
+					<div class="span12">
+						<div class="box">
+							<div class="box-title">
+								<h3>
+									<i class="icon-edit"></i>
+									Ерөнхий тохируулга
+								</h3>
+							</div>
+							<div class="box-content">
+								<div class="alert alert-info">
+									<h4>Анхаар!</h4>
+									<p>RSS уншигчийн давтамжийг 24 48 72 гэх мэт тоогоор оруулана уу</p>
+								</div>
+								<table id="user" class="table table-bordered table-striped table-force-topborder" style="clear: both">
+									<tbody> 
+										<tr>         
+											<td width="15%">RSS</td>
+											<td width="50%"><a href="#" id="username" data-type="text" data-pk="1" data-original-title="Enter username">24</a></td>
+											<td width="35%" class='hidden-480'><span class="muted">24 цагт нэг удаа ачаалана</span></td>
+										</tr>
+										<tr>         
+											<td>RSS линкууд</td>
+											<td><a href="#" id="comments" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-original-title="Enter comments">http://www.ikon.mn/rss<br>http://news.gogo.mn/feed</a></td>
+											<td class='hidden-480'><span class="muted">Мэдээний RSS линкуудыг мөр мөрт оруулана уу</span></td>
+										</tr> 
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="box">
+							<div class="box-title">
+								<h3>
+									<i class="icon-table"></i>
+									Мэдээ
+								</h3>
+							</div>
+							<div class="box-content nopadding">
+								<table class="table table-hover table-nomargin table-bordered dataTable-columnfilter dataTable">
+									<thead>
+										<tr class='thefilter'>
+											<th>Гарчиг</th>
+											<th>Нийтлэгч</th>
+                                            <th class='hidden-350'>Огноо</th>
+                                            <th class='hidden-1024'>0-1</th>
+                                            <th class='hidden-1025'>0-100</th>
+                                            <th class='hidden-480'></th>
+                                            <th class='hidden-481'></th>
+										</tr>
+										<tr>
+											<th>Гарчиг</th>
+											<th>Нийтлэгч</th>
+											<th class='hidden-350'>Огноо</th>
+											<th class='hidden-1024'>Утсгагдсан</th>
+											<th class='hidden-1025'>Хуулсан тоо</th>
+											<th class='hidden-480'>Зураг</th>
+											<th class='hidden-481'>Линк</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Зөвшөөрөлгүй ашиглаж буй нийтийн эзэмшлийн газрыг чөлөөлж, тохижуулна</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+											
+										</tr>
+										<tr>
+											<td>Туркмены удирдагч усны нөөц бий болгохоо амлалаа</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>М.Батчимэг: Цаг алдалгүй хөгжье гэвэл Үндсэн хуульдaa өөрчлөлт оруулах зайлшгүй шаардлагатай</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web</td>
+										</tr>
+										<tr>
+											<td>Мэтгэлцээнд ялах ДӨРВӨН арга</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Хорио цээрийн дэглэм тогтоожээ</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Э.Бат-Үүл: Дагуул хотууд бие даан шийдвэр гаргах боломжтой</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>УИХ-ын Хаврын чуулган өнөөдөр эхэлнэ</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>BLOOMBERG AWARDS: "ШИЛДЭГ ГҮЙЦЭТГЭХ ЗАХИРАЛ"- аар АПУ компанийн гүйцэтгэх захирал Ц.Эрдэнэбилэг тодорлоо</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>98 хүн төөрч, 140 тээврийн хэрэгсэл цасанд боогдон, олон тооны мал осгожээ</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=http://www.ikon.mn/n/fpu" alt="Generated by WebThumbnail.org"><img src="http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=http://www.ikon.mn/n/fpu" alt="Generated by WebThumbnail.org" /><a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>И.М.МАЙСКИЙ: Монголчуудын аж ахуйн хэвшил</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Зарим барилгын ажлыг албадан зогсоожээ</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>ҮЙЛ ЯВДАЛ: Шүүхийн мэтгэлцээний тэмцээний шагнал гардуулах ёслолын ажиллагаа болно</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Ч.Сайханбилэг: Оюу толгой, Таван толгой төслүүдийг хөдөлгөж бид хөгжлийн том түгжээгээ мулталлаа</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Жож Сэрээнэнгийн лампчик</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>ЕРӨНХИЙ САЙДЫН ХЭЛСЭН ОНЦЛОХ ЭШЛЭЛҮҮД...</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Ерөнхий сайд өнөөдөр ямар МЭДЭГДЭЛ хийх бол?</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Нэрт зураглаач Балдангийн Дэмбэрэл</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Оргодол Гитлерийг таних АНУ-ын тагнуулынхны гаргасан зураг</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Та нүдний шил зүүх хэрэгтэй эсэхээ эндээс шалгаарай</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Цасан шуурганы улмаас баруун чиглэлийн зам, даваа цасанд боогджээ</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Г.Сүрэнханд: Товлолт вакцинаа хийлгээгүй хүүхдүүд улаанбурханд өртөж байна</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Б.Лхагважав: Эдийн засгийн зуднаас бод, бог малынхаа алийг үлдээх вэ гэдгийг улстөрчид л шийдэх болчихоод байна</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Устай нөхөрлөвөл урт насална</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Франц хэт туранхай загвар өмсөгчдийг шийтгэдэг болно</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Панда баавгайнууд дотно харилцаандаа дээд амжилт тогтоожээ</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Герман нисгэгч онгоцыг уул руу чиглүүлээд хурдаа нэмсэн нь батлагдлаа</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Ийм мөстэй вискиг уухгүй байхын аргагүй</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>ГОЛОМТ БАНК “Монголын Эдийн Засгийн Чуулган 2015” -ын Алтан ивээн тэтгэгчээр ажиллалаа</td>
+											<td>
+											IKON
+											</td>
+											<td class='hidden-350'>06 Apr 2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Халуурах, тууралт гарах, ханиах, нус гоожих, нүд улайх шинж тэмдэг илэрвэл эмчид хандаарай</td>
+											<td>
+											GOGO
+											</td>
+											<td class='hidden-350'>06-04-2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link image<a/></td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>“Эрдэнэс таван толгой” дахин эзгүйрлээ</td>
+											<td>
+											GOGO
+											</td>
+											<td class='hidden-350'>06-04-2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>iPad Air 2, iPad Mini 3 Албан ёсоор PC Mall-д</td>
+											<td>
+											GOGO
+											</td>
+											<td class='hidden-350'>06-04-2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>НҮБ: Йемен дэх мөргөлдөөнөөр 500 гаруй хүн амиа алдлаа</td>
+											<td>
+											GOGO
+											</td>
+											<td class='hidden-350'>06-04-2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Сонгинохайрханы хишиг барилдаанд улсын аварга Г.Эрхэмбаяр түрүүллээ</td>
+											<td>
+											GOGO
+											</td>
+											<td class='hidden-350'>06-04-2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>е</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>98 хүн төөрч, 140 тээврийн хэрэгсэл цасанд боогдон, олон тооны мал осгожээ</td>
+											<td>
+											GOGO
+											</td>
+											<td class='hidden-350'>06-04-2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>2</td>
+											<td class='hidden-480'><a href="http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=http://news.gogo.mn/r/159351"><img src="http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=http://news.gogo.mn/r/159351" alt="Generated by WebThumbnail.org" /><a/></td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Грек, Оросын нөхөрлөл ЕХ-г сандаргав уу?</td>
+											<td>
+											GOGO
+											</td>
+											<td class='hidden-350'>06-04-2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Улаанбаатарт 3-5 хэм хүйтэн байна</td>
+											<td>
+											GOGO
+											</td>
+											<td class='hidden-350'>06-04-2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>ХасБанк шинэчилсэн өнгө төрхөө танилцуулж байна</td>
+											<td>
+											GOGO
+											</td>
+											<td class='hidden-350'>06-04-2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>“Эрдэнэс таван толгой”, орон нутгийн Тавантолгой болон Энержи Ресурс компаниуд ойлголцолд хүрчээ</td>
+											<td>
+											GOGO
+											</td>
+											<td class='hidden-350'>06-04-2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Алтан цагт зориулсан AppleCare+ үйлчилгээ 1000 ам. доллар</td>
+											<td>
+											GOGO
+											</td>
+											<td class='hidden-350'>06-04-2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Ноот бичигт гарын үсэг зурна</td>
+											<td>
+											GOGO
+											</td>
+											<td class='hidden-350'>06-04-2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Samsung телевизороо аваад 10.000.000 төгрөг бэлнээр аваарай</td>
+											<td>
+											GOGO
+											</td>
+											<td class='hidden-350'>06-04-2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Зөвшөөрөлгүй ашиглаж байгаа нийтийн эдэлбэр газрыг чөлөөлнө</td>
+											<td>
+											GOGO
+											</td>
+											<td class='hidden-350'>06-04-2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Luxury King Tower apartment-ын төлбөрийн онцгой нөхцөл</td>
+											<td>
+											GOGO
+											</td>
+											<td class='hidden-350'>06-04-2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>ЭХЭМҮТ, АНУ-ын Лос Анжелесийн Хүүхдийн эмнэлэгтэй хамтын ажиллагаагаа өргөжүүллээ</td>
+											<td>
+											GOGO
+											</td>
+											<td class='hidden-350'>06-04-2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link web<a/></td>
+										</tr>
+										<tr>
+											<td>Венецийн олон улсын дүрслэх урлагийн Биеннальд монгол зураачид анх удаа оролцоно</td>
+											<td>
+											GOGO
+											</td>
+											<td class='hidden-350'>06-04-2015</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-1025'>-</td>
+											<td class='hidden-480'><a href="http://www.ikon.mn/n/fq4">Link image<a/></td>
+											<td class='hidden-480'><a href="http://news.gogo.mn/r/159351">Link web<a/></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

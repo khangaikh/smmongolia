@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- Apple devices fullscreen -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!-- Apple devices fullscreen -->
+	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<title>SM Mongolia</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Bootstrap responsive -->
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+	<!-- jQuery UI -->
+	<link rel="stylesheet" href="css/plugins/jquery-ui/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="css/plugins/jquery-ui/smoothness/jquery.ui.theme.css">
+	<!-- dataTables -->
+	<link rel="stylesheet" href="css/plugins/datatable/TableTools.css">
+	<!-- chosen -->
+	<link rel="stylesheet" href="css/plugins/chosen/chosen.css">
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Color CSS -->
+	<link rel="stylesheet" href="css/themes.css">
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	
+	<!-- Nice Scroll -->
+	<script src="js/plugins/nicescroll/jquery.nicescroll.min.js"></script>
+	<!-- imagesLoaded -->
+	<script src="js/plugins/imagesLoaded/jquery.imagesloaded.min.js"></script>
+	<!-- jQuery UI -->
+	<script src="js/plugins/jquery-ui/jquery.ui.core.min.js"></script>
+	<script src="js/plugins/jquery-ui/jquery.ui.widget.min.js"></script>
+	<script src="js/plugins/jquery-ui/jquery.ui.mouse.min.js"></script>
+	<script src="js/plugins/jquery-ui/jquery.ui.resizable.min.js"></script>
+	<script src="js/plugins/jquery-ui/jquery.ui.sortable.min.js"></script>
+	<!-- slimScroll -->
+	<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Bootbox -->
+	<script src="js/plugins/bootbox/jquery.bootbox.js"></script>
+	<!-- dataTables -->
+	<script src="js/plugins/datatable/jquery.dataTables.min.js"></script>
+	<script src="js/plugins/datatable/TableTools.min.js"></script>
+	<script src="js/plugins/datatable/ColReorder.min.js"></script>
+	<script src="js/plugins/datatable/ColVis.min.js"></script>
+	<script src="js/plugins/datatable/jquery.dataTables.columnFilter.js"></script>
+	<!-- Chosen -->
+	<script src="js/plugins/chosen/chosen.jquery.min.js"></script>
+
+	<!-- Theme framework -->
+	<script src="js/eakroko.js"></script>
+	<!-- Theme scripts -->
+
+	<!--[if lte IE 9]>
+		<script src="js/plugins/placeholder/jquery.placeholder.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+	
+	<!-- Favicon -->
+	<!-- Apple devices Homescreen icon -->
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png" />
+
+</head>
+
+<body>
+	<div id="navigation">
+		<div class="container-fluid">
+			<a href="#" id="brand" style="background-image:none;">-SMMN-</a>
+			</a>
+			<ul class='main-nav'>
+				<li class='active'>
+					<a href="#">
+						<span>Эхлэл</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container-fluid" id="content">
+		<div id="left">
+
+			<div class="subnav">
+				<div class="subnav-title">
+					<a href="#" class='toggle-subnav'><i class="icon-angle-down"></i><span>Тохируулга</span></a>
+				</div>
+				<ul class="subnav-menu">
+					<li class='dropdown'>
+						<a href="#" data-toggle="dropdown">RSS</a>
+					</li>
+                    <li class='dropdown'>
+                        <a href="#" data-toggle="dropdown">Politwoops</a>
+                    </li>
+				</ul>
+                <div class="subnav-title">
+                    <a href="#" class='toggle-subnav'><i class="icon-angle-down"></i><span>Мэдээлэл</span></a>
+                </div>
+                <ul class="subnav-menu">
+                    <li >
+                        <a href="#" >Мэдээ</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Жиргээ</a>
+                    </li>
+                </ul>
+			</div>
+		</div>
+		<div id="main">
+			<div class="container-fluid">
+
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="box">
+							<div class="box-title">
+								<h3>
+									<i class="icon-table"></i>
+									Жиргээ
+								</h3>
+							</div>
+							<div class="box-content nopadding">
+								<table class="table table-hover table-nomargin table-bordered dataTable-columnfilter dataTable">
+									<thead>
+										<tr class='thefilter'>
+											<th>Гарчиг</th>
+											<th>Нийтлэгч</th>
+                                            <th class='hidden-350'>Огноо</th>
+                                            <th class='hidden-1024'>Утсгагдсан</th>
+                                            <th class='hidden-480'>Зураг</th>
+										</tr>
+										<tr>
+											<th>Гарчиг</th>
+											<th>Нийтлэгч</th>
+											<th class='hidden-350'>Огноо</th>
+											<th class='hidden-1024'>Утсгагдсан</th>
+											<th class='hidden-480'>Зураг</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Trident</td>
+											<td>
+												Internet
+													Explorer 4.0
+											</td>
+											<td class='hidden-350'>Win 95+</td>
+											<td class='hidden-1024'>4</td>
+											<td class='hidden-480'>X</td>
+										</tr>
+										<tr>
+											<td>Presto</td>
+											<td>Nokia N800</td>
+											<td class='hidden-350'>N800</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-480'>A</td>
+										</tr>
+										<tr>
+											<td>Misc</td>
+											<td>NetFront 3.4</td>
+											<td class='hidden-350'>Embedded devices</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-480'>A</td>
+										</tr>
+										<tr>
+											<td>Misc</td>
+											<td>Dillo 0.8</td>
+											<td class='hidden-350'>Embedded devices</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-480'>X</td>
+										</tr>
+										<tr>
+											<td>Misc</td>
+											<td>Links</td>
+											<td class='hidden-350'>Text only</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-480'>X</td>
+										</tr>
+										<tr>
+											<td>Misc</td>
+											<td>Lynx</td>
+											<td class='hidden-350'>Text only</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-480'>X</td>
+										</tr>
+										<tr>
+											<td>Misc</td>
+											<td>IE Mobile</td>
+											<td class='hidden-350'>Windows Mobile 6</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-480'>C</td>
+										</tr>
+										<tr>
+											<td>Misc</td>
+											<td>PSP browser</td>
+											<td class='hidden-350'>PSP</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-480'>C</td>
+										</tr>
+										<tr>
+											<td>Other browsers</td>
+											<td>All others</td>
+											<td class='hidden-350'>-</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-480'>U</td>
+										</tr>
+										<tr>
+											<td>Trident</td>
+											<td>
+												Internet
+													Explorer 4.0
+											</td>
+											<td class='hidden-350'>Win 95+</td>
+											<td class='hidden-1024'>4</td>
+											<td class='hidden-480'>X</td>
+										</tr>
+										<tr>
+											<td>Presto</td>
+											<td>Nokia N800</td>
+											<td class='hidden-350'>N800</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-480'>A</td>
+										</tr>
+										<tr>
+											<td>Misc</td>
+											<td>NetFront 3.4</td>
+											<td class='hidden-350'>Embedded devices</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-480'>A</td>
+										</tr>
+										<tr>
+											<td>Misc</td>
+											<td>Dillo 0.8</td>
+											<td class='hidden-350'>Embedded devices</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-480'>X</td>
+										</tr>
+										<tr>
+											<td>Misc</td>
+											<td>Links</td>
+											<td class='hidden-350'>Text only</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-480'>X</td>
+										</tr>
+										<tr>
+											<td>Misc</td>
+											<td>Lynx</td>
+											<td class='hidden-350'>Text only</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-480'>X</td>
+										</tr>
+										<tr>
+											<td>Misc</td>
+											<td>IE Mobile</td>
+											<td class='hidden-350'>Windows Mobile 6</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-480'>C</td>
+										</tr>
+										<tr>
+											<td>Misc</td>
+											<td>PSP browser</td>
+											<td class='hidden-350'>PSP</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-480'>C</td>
+										</tr>
+										<tr>
+											<td>Other browsers</td>
+											<td>All others</td>
+											<td class='hidden-350'>-</td>
+											<td class='hidden-1024'>-</td>
+											<td class='hidden-480'>U</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+</html>
